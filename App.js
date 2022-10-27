@@ -1,20 +1,31 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import { WebView } from 'react-native-webview';
+import { BackHandler } from 'react-native';
+import { useState, useEffect } from 'react';
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  function handleBackButtonClick() {
+    //  const navigation=useNavigation()
+    BackHandler.exitApp();
+      //this.goBack();
+      return true;
+    }
+    
+    useEffect(() => {
+      BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
+      return () => {
+        BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick);
+      };
+    }, []);
+      
+    return (
+      <>
+      
+        <WebView
+          originWhitelist={['*']}
+          source={{uri: 'https://bezalelstudents.shelegcrm.com'}}
+          style={{marginTop: 20}}
+        />
+      </>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
