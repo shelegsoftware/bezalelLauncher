@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "bezalelLauncher",
+    "name": "bezalel Lending",
     "slug": "bezalelLauncher",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/bzalellogo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/bzalelsplash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -32,6 +32,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7a32f151-e0f0-44b0-aa0f-167d42f3c88e"
+      }
     }
   }
 }
