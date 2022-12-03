@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "bezalel Lending",
+    "name": "בצלאל השאלות ציוד",
     "slug": "bezalelLauncher",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,13 +22,9 @@
       "bundleIdentifier": "sheleg.bezalel"
     },
     "android": {
-      "versionCode": 2,
+      "versionCode": 3,
       "permissions": [],
-      "package": "sheleg.bezalel",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "sheleg.bezalel"
     },
     "web": {
       "favicon": "./assets/favicon.png"
