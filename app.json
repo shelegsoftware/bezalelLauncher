@@ -2,15 +2,10 @@
   "expo": {
     "name": "בצלאל השאלות ציוד",
     "slug": "bezalelLauncher",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/bzalellogo.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/bzalelsplash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -22,13 +17,36 @@
       "bundleIdentifier": "sheleg.bezalel"
     },
     "android": {
-      "versionCode": 3,
+      "versionCode": 4,
       "permissions": [],
-      "package": "sheleg.bezalel"
+      "package": "sheleg.bezalel",
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/bzalelsplash.png",
+          "imageWidth": 250,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "buildToolsVersion": "36.0.0",
+            "minSdkVersion": 24
+          }
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "7a32f151-e0f0-44b0-aa0f-167d42f3c88e"
