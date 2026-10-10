@@ -17,7 +17,7 @@
       "bundleIdentifier": "sheleg.bezalel"
     },
     "android": {
-      "versionCode": 5,
+      "versionCode": 6,
       "permissions": [],
       "package": "sheleg.bezalel",
       "predictiveBackGestureEnabled": false
